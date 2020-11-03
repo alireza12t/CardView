@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -14,6 +14,7 @@
 		F5F1F0082551A21000E51FF3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F5F1F0062551A21000E51FF3 /* Main.storyboard */; };
 		F5F1F00A2551A21000E51FF3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F5F1F0092551A21000E51FF3 /* Assets.xcassets */; };
 		F5F1F00D2551A21000E51FF3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F5F1F00B2551A21000E51FF3 /* LaunchScreen.storyboard */; };
+		F5F1F0222551B7BA00E51FF3 /* BankHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5F1F01D2551B5DF00E51FF3 /* BankHelper.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		F5F1F0092551A21000E51FF3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F5F1F00C2551A21000E51FF3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F5F1F00E2551A21000E51FF3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F5F1F01D2551B5DF00E51FF3 /* BankHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BankHelper.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -48,7 +50,6 @@
 				506BB47B56478E578A674C51 /* Pods-CardView.debug.xcconfig */,
 				375EFE8D2CD165726FD37280 /* Pods-CardView.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -83,6 +84,7 @@
 			children = (
 				F5F1F0002551A21000E51FF3 /* AppDelegate.swift */,
 				F5F1F0022551A21000E51FF3 /* SceneDelegate.swift */,
+				F5F1F01D2551B5DF00E51FF3 /* BankHelper.swift */,
 				F5F1F0042551A21000E51FF3 /* ViewController.swift */,
 				F5F1F0062551A21000E51FF3 /* Main.storyboard */,
 				F5F1F0092551A21000E51FF3 /* Assets.xcassets */,
@@ -206,6 +208,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F5F1F0222551B7BA00E51FF3 /* BankHelper.swift in Sources */,
 				F5F1F0052551A21000E51FF3 /* ViewController.swift in Sources */,
 				F5F1F0012551A21000E51FF3 /* AppDelegate.swift in Sources */,
 				F5F1F0032551A21000E51FF3 /* SceneDelegate.swift in Sources */,

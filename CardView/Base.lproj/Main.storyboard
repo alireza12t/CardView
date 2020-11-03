@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <device id="retina6_5" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17126"/>
+        <capability name="Image references" minToolsVersion="12.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -17,28 +18,235 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="U56-2x-Y5s">
-                                <rect key="frame" x="20" y="359.5" width="374" height="187"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="U56-2x-Y5s" customClass="DesignableView" customModule="Spring">
+                                <rect key="frame" x="15" y="338" width="384" height="230"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="کارت بانکی خود را اضافه نمایید." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="P3F-rx-Ubm">
+                                        <rect key="frame" x="131.66666666666663" y="125.00000000000001" width="242.33333333333337" height="21.666666666666671"/>
+                                        <color key="tintColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                                        <color key="textColor" red="0.13776618239999999" green="0.16092866659999999" blue="0.15293911099999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="V7O-Mh-1ba">
+                                        <rect key="frame" x="304" y="51.000000000000007" width="70" height="68.666666666666671"/>
+                                        <color key="tintColor" red="0.11764705882352941" green="0.15686274509803921" blue="0.11764705882352941" alpha="0.84705882352941175" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="70" id="gqH-Ul-IpU"/>
+                                            <constraint firstAttribute="height" constant="70" id="rc0-qf-Mad"/>
+                                        </constraints>
+                                        <imageReference key="image" image="plus.circle" catalog="system" symbolScale="medium"/>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="پوشش همه کارت‌های عضو شتاب" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="8" translatesAutoresizingMaskIntoConstraints="NO" id="OmT-Wl-BDb">
+                                        <rect key="frame" x="160" y="174.66666666666663" width="214" height="20"/>
+                                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="16"/>
+                                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="IcD-uM-i1P">
+                                        <rect key="frame" x="25" y="169.66666666666669" width="75" height="30"/>
+                                        <subviews>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OXs-46-9YH" customClass="DesignableView" customModule="Spring">
+                                                <rect key="frame" x="45" y="0.0" width="30" height="30"/>
+                                                <subviews>
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ansarbank" translatesAutoresizingMaskIntoConstraints="NO" id="lcv-oS-kFb" customClass="DesignableImageView" customModule="Spring">
+                                                        <rect key="frame" x="0.0" y="0.0" width="30" height="30"/>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                                <real key="value" value="15"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                        </userDefinedRuntimeAttributes>
+                                                    </imageView>
+                                                </subviews>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="bottom" secondItem="lcv-oS-kFb" secondAttribute="bottom" id="Hdq-ca-AUm"/>
+                                                    <constraint firstItem="lcv-oS-kFb" firstAttribute="top" secondItem="OXs-46-9YH" secondAttribute="top" id="Nc1-zm-AKZ"/>
+                                                    <constraint firstAttribute="width" secondItem="OXs-46-9YH" secondAttribute="height" id="Uvj-Wl-7qT"/>
+                                                    <constraint firstAttribute="height" constant="30" id="fiI-QH-TYY"/>
+                                                    <constraint firstItem="lcv-oS-kFb" firstAttribute="leading" secondItem="OXs-46-9YH" secondAttribute="leading" id="gbC-6b-4RR"/>
+                                                    <constraint firstAttribute="trailing" secondItem="lcv-oS-kFb" secondAttribute="trailing" id="sCc-Wu-1IP"/>
+                                                </constraints>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                        <real key="value" value="15"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KQp-1f-xEV" customClass="DesignableView" customModule="Spring">
+                                                <rect key="frame" x="30" y="0.0" width="30" height="30"/>
+                                                <subviews>
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ansarbank" translatesAutoresizingMaskIntoConstraints="NO" id="7oR-s9-HvV" customClass="DesignableImageView" customModule="Spring">
+                                                        <rect key="frame" x="0.0" y="0.0" width="30" height="30"/>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                                <real key="value" value="15"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                        </userDefinedRuntimeAttributes>
+                                                    </imageView>
+                                                </subviews>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                <constraints>
+                                                    <constraint firstItem="7oR-s9-HvV" firstAttribute="leading" secondItem="KQp-1f-xEV" secondAttribute="leading" id="1mu-PP-qWt"/>
+                                                    <constraint firstAttribute="trailing" secondItem="7oR-s9-HvV" secondAttribute="trailing" id="MjD-K2-9fS"/>
+                                                    <constraint firstAttribute="bottom" secondItem="7oR-s9-HvV" secondAttribute="bottom" id="Pbc-w1-hu0"/>
+                                                    <constraint firstAttribute="width" secondItem="KQp-1f-xEV" secondAttribute="height" id="T9X-Dh-F2s"/>
+                                                    <constraint firstAttribute="height" constant="30" id="oOv-Is-kKX"/>
+                                                    <constraint firstItem="7oR-s9-HvV" firstAttribute="top" secondItem="KQp-1f-xEV" secondAttribute="top" id="x7e-c4-zQT"/>
+                                                </constraints>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                        <real key="value" value="15"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gPz-mK-ScR" customClass="DesignableView" customModule="Spring">
+                                                <rect key="frame" x="15" y="0.0" width="30" height="30"/>
+                                                <subviews>
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ansarbank" translatesAutoresizingMaskIntoConstraints="NO" id="sTM-p0-RwX" customClass="DesignableImageView" customModule="Spring">
+                                                        <rect key="frame" x="0.0" y="0.0" width="30" height="30"/>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                                <real key="value" value="15"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                        </userDefinedRuntimeAttributes>
+                                                    </imageView>
+                                                </subviews>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="gPz-mK-ScR" secondAttribute="height" multiplier="1:1" id="BlQ-HR-98W"/>
+                                                    <constraint firstItem="sTM-p0-RwX" firstAttribute="top" secondItem="gPz-mK-ScR" secondAttribute="top" id="KQo-vy-zb4"/>
+                                                    <constraint firstAttribute="height" constant="30" id="Lge-l7-kfU"/>
+                                                    <constraint firstItem="sTM-p0-RwX" firstAttribute="leading" secondItem="gPz-mK-ScR" secondAttribute="leading" id="boo-ew-nHb"/>
+                                                    <constraint firstAttribute="bottom" secondItem="sTM-p0-RwX" secondAttribute="bottom" id="hqX-rf-Rbc"/>
+                                                    <constraint firstAttribute="trailing" secondItem="sTM-p0-RwX" secondAttribute="trailing" id="mzD-ci-hRt"/>
+                                                </constraints>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                        <real key="value" value="15"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aAG-o7-42J" customClass="DesignableView" customModule="Spring">
+                                                <rect key="frame" x="0.0" y="0.0" width="30" height="30"/>
+                                                <subviews>
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ansarbank" translatesAutoresizingMaskIntoConstraints="NO" id="fy7-3o-qV7" customClass="DesignableImageView" customModule="Spring">
+                                                        <rect key="frame" x="0.0" y="0.0" width="30" height="30"/>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                                <real key="value" value="15"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                        </userDefinedRuntimeAttributes>
+                                                    </imageView>
+                                                </subviews>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="bottom" secondItem="fy7-3o-qV7" secondAttribute="bottom" id="996-iI-ccu"/>
+                                                    <constraint firstAttribute="trailing" secondItem="fy7-3o-qV7" secondAttribute="trailing" id="H15-Np-Ha6"/>
+                                                    <constraint firstItem="fy7-3o-qV7" firstAttribute="leading" secondItem="aAG-o7-42J" secondAttribute="leading" id="Mgn-2H-qeR"/>
+                                                    <constraint firstItem="fy7-3o-qV7" firstAttribute="top" secondItem="aAG-o7-42J" secondAttribute="top" id="beC-ff-Nua"/>
+                                                    <constraint firstAttribute="width" secondItem="aAG-o7-42J" secondAttribute="height" id="bqg-kN-gBn"/>
+                                                    <constraint firstAttribute="height" constant="30" id="pzO-FE-WvQ"/>
+                                                </constraints>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                        <real key="value" value="15"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </view>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="KQp-1f-xEV" firstAttribute="width" secondItem="KQp-1f-xEV" secondAttribute="height" id="46e-9o-LtH"/>
+                                            <constraint firstItem="OXs-46-9YH" firstAttribute="width" secondItem="OXs-46-9YH" secondAttribute="height" id="9Ka-bi-hVv"/>
+                                            <constraint firstAttribute="height" constant="30" id="Fda-P4-SGL"/>
+                                            <constraint firstItem="gPz-mK-ScR" firstAttribute="leading" secondItem="aAG-o7-42J" secondAttribute="trailing" constant="-15" id="IFS-an-qVD"/>
+                                            <constraint firstItem="aAG-o7-42J" firstAttribute="centerY" secondItem="IcD-uM-i1P" secondAttribute="centerY" id="NeQ-aU-gF7"/>
+                                            <constraint firstItem="KQp-1f-xEV" firstAttribute="leading" secondItem="gPz-mK-ScR" secondAttribute="trailing" constant="-15" id="Qml-7p-seJ"/>
+                                            <constraint firstItem="OXs-46-9YH" firstAttribute="width" secondItem="OXs-46-9YH" secondAttribute="height" id="afP-jB-z5p"/>
+                                            <constraint firstItem="OXs-46-9YH" firstAttribute="centerY" secondItem="IcD-uM-i1P" secondAttribute="centerY" id="dvN-Uo-eCH"/>
+                                            <constraint firstItem="KQp-1f-xEV" firstAttribute="width" secondItem="KQp-1f-xEV" secondAttribute="height" id="hfe-z7-3yU"/>
+                                            <constraint firstItem="gPz-mK-ScR" firstAttribute="centerY" secondItem="IcD-uM-i1P" secondAttribute="centerY" id="k8j-LY-Q5y"/>
+                                            <constraint firstItem="OXs-46-9YH" firstAttribute="width" secondItem="OXs-46-9YH" secondAttribute="height" id="kbU-JG-BhP"/>
+                                            <constraint firstItem="OXs-46-9YH" firstAttribute="leading" secondItem="KQp-1f-xEV" secondAttribute="trailing" constant="-15" id="t4A-9D-51I"/>
+                                            <constraint firstItem="aAG-o7-42J" firstAttribute="leading" secondItem="IcD-uM-i1P" secondAttribute="leading" id="ue4-M2-afY"/>
+                                            <constraint firstAttribute="trailing" secondItem="OXs-46-9YH" secondAttribute="trailing" id="vr9-gg-Hza"/>
+                                            <constraint firstItem="KQp-1f-xEV" firstAttribute="centerY" secondItem="IcD-uM-i1P" secondAttribute="centerY" id="wSM-6o-Kwp"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LyB-Td-NJv">
+                                        <rect key="frame" x="25" y="199.66666666666663" width="334" height="30.333333333333343"/>
+                                        <color key="backgroundColor" red="0.1128603294" green="0.80647283790000002" blue="0.65096348520000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" red="0.070588235294117646" green="0.77254901960784317" blue="0.58431372549019611" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" secondItem="U56-2x-Y5s" secondAttribute="height" multiplier="10:5" id="Xd7-iV-B7g"/>
+                                    <constraint firstAttribute="trailing" secondItem="V7O-Mh-1ba" secondAttribute="trailing" constant="10" id="05X-we-x8N"/>
+                                    <constraint firstItem="P3F-rx-Ubm" firstAttribute="trailing" secondItem="V7O-Mh-1ba" secondAttribute="trailing" id="1Pj-Pt-CDI"/>
+                                    <constraint firstItem="OmT-Wl-BDb" firstAttribute="trailing" secondItem="P3F-rx-Ubm" secondAttribute="trailing" id="4wn-J7-ihM"/>
+                                    <constraint firstItem="V7O-Mh-1ba" firstAttribute="top" secondItem="U56-2x-Y5s" secondAttribute="top" constant="50" id="6Cj-yb-Drr"/>
+                                    <constraint firstItem="OmT-Wl-BDb" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="IcD-uM-i1P" secondAttribute="trailing" constant="5" id="MYg-nE-7ZS"/>
+                                    <constraint firstItem="LyB-Td-NJv" firstAttribute="top" secondItem="IcD-uM-i1P" secondAttribute="bottom" id="RXq-Og-fdJ"/>
+                                    <constraint firstItem="OmT-Wl-BDb" firstAttribute="top" secondItem="P3F-rx-Ubm" secondAttribute="bottom" constant="28" id="dye-9m-rtK"/>
+                                    <constraint firstAttribute="bottom" secondItem="LyB-Td-NJv" secondAttribute="bottom" id="mfV-hD-Iy9"/>
+                                    <constraint firstItem="P3F-rx-Ubm" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="U56-2x-Y5s" secondAttribute="leading" constant="10" id="o0d-TW-vdh"/>
+                                    <constraint firstItem="IcD-uM-i1P" firstAttribute="centerY" secondItem="OmT-Wl-BDb" secondAttribute="centerY" id="pht-go-lUa"/>
+                                    <constraint firstAttribute="trailing" secondItem="LyB-Td-NJv" secondAttribute="trailing" constant="25" id="qb1-9O-vzk"/>
+                                    <constraint firstItem="IcD-uM-i1P" firstAttribute="leading" secondItem="U56-2x-Y5s" secondAttribute="leading" constant="25" id="rRO-al-5gd"/>
+                                    <constraint firstAttribute="height" constant="230" id="sev-Lo-zYo"/>
+                                    <constraint firstItem="P3F-rx-Ubm" firstAttribute="top" secondItem="V7O-Mh-1ba" secondAttribute="bottom" constant="5" id="sxY-lA-LvU"/>
+                                    <constraint firstItem="LyB-Td-NJv" firstAttribute="leading" secondItem="IcD-uM-i1P" secondAttribute="leading" id="vlI-HA-8LP"/>
                                 </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="25"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="0.0"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                             </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <constraints>
-                            <constraint firstItem="U56-2x-Y5s" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="8qB-1R-6Nq"/>
+                            <constraint firstItem="U56-2x-Y5s" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="15" id="8qB-1R-6Nq"/>
                             <constraint firstItem="U56-2x-Y5s" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="jmx-ee-hWb"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="U56-2x-Y5s" secondAttribute="trailing" constant="20" id="rjf-Im-GZC"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="U56-2x-Y5s" secondAttribute="trailing" constant="15" id="rjf-Im-GZC"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="cardView" destination="U56-2x-Y5s" id="rKa-sX-hpx"/>
+                        <outlet property="circle1CenterConstraint" destination="NeQ-aU-gF7" id="g6Q-V4-Zqx"/>
+                        <outlet property="circle2CenterConstraint" destination="k8j-LY-Q5y" id="aOc-I6-TL5"/>
+                        <outlet property="circle3CenterConstraint" destination="wSM-6o-Kwp" id="kBK-xL-Ero"/>
+                        <outlet property="circle4CenterConstraint" destination="dvN-Uo-eCH" id="aiY-6U-BXQ"/>
+                        <outlet property="imageView1" destination="fy7-3o-qV7" id="9mr-Is-WmE"/>
+                        <outlet property="imageView2" destination="sTM-p0-RwX" id="GN2-sP-jj6"/>
+                        <outlet property="imageView3" destination="7oR-s9-HvV" id="jZB-BK-Gp9"/>
+                        <outlet property="imageView4" destination="lcv-oS-kFb" id="hia-1I-qly"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="136.875" y="128.87323943661971"/>
+            <point key="canvasLocation" x="136.23188405797103" y="128.57142857142856"/>
         </scene>
     </scenes>
+    <designables>
+        <designable name="7oR-s9-HvV">
+            <size key="intrinsicContentSize" width="128" height="129"/>
+        </designable>
+        <designable name="fy7-3o-qV7">
+            <size key="intrinsicContentSize" width="128" height="129"/>
+        </designable>
+        <designable name="lcv-oS-kFb">
+            <size key="intrinsicContentSize" width="128" height="129"/>
+        </designable>
+        <designable name="sTM-p0-RwX">
+            <size key="intrinsicContentSize" width="128" height="129"/>
+        </designable>
+    </designables>
     <resources>
+        <image name="ansarbank" width="128" height="129"/>
+        <image name="plus.circle" catalog="system" width="128" height="121"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
