@@ -180,7 +180,7 @@
                                         </constraints>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LyB-Td-NJv">
-                                        <rect key="frame" x="80" y="169.66666666666663" width="279" height="30.333333333333343"/>
+                                        <rect key="frame" x="80" y="174.66666666666663" width="279" height="25.333333333333343"/>
                                         <color key="backgroundColor" red="0.1128603294" green="0.80647283790000002" blue="0.65096348520000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                     </view>
                                 </subviews>
@@ -191,8 +191,8 @@
                                     <constraint firstItem="OmT-Wl-BDb" firstAttribute="trailing" secondItem="P3F-rx-Ubm" secondAttribute="trailing" id="4wn-J7-ihM"/>
                                     <constraint firstItem="V7O-Mh-1ba" firstAttribute="top" secondItem="U56-2x-Y5s" secondAttribute="top" constant="20" id="6Cj-yb-Drr"/>
                                     <constraint firstItem="OmT-Wl-BDb" firstAttribute="leading" secondItem="IcD-uM-i1P" secondAttribute="trailing" constant="5" id="MYg-nE-7ZS"/>
-                                    <constraint firstItem="LyB-Td-NJv" firstAttribute="top" secondItem="IcD-uM-i1P" secondAttribute="bottom" id="RXq-Og-fdJ"/>
-                                    <constraint firstItem="LyB-Td-NJv" firstAttribute="top" secondItem="OmT-Wl-BDb" secondAttribute="bottom" constant="4.9999999999999432" id="bAS-cP-PZs"/>
+                                    <constraint firstItem="LyB-Td-NJv" firstAttribute="top" secondItem="IcD-uM-i1P" secondAttribute="bottom" constant="5" id="RXq-Og-fdJ"/>
+                                    <constraint firstItem="LyB-Td-NJv" firstAttribute="top" relation="greaterThanOrEqual" secondItem="OmT-Wl-BDb" secondAttribute="bottom" constant="5" id="bAS-cP-PZs"/>
                                     <constraint firstItem="OmT-Wl-BDb" firstAttribute="top" secondItem="P3F-rx-Ubm" secondAttribute="bottom" constant="28" id="dye-9m-rtK"/>
                                     <constraint firstAttribute="bottom" secondItem="LyB-Td-NJv" secondAttribute="bottom" id="mfV-hD-Iy9"/>
                                     <constraint firstItem="P3F-rx-Ubm" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="U56-2x-Y5s" secondAttribute="leading" constant="10" id="o0d-TW-vdh"/>
@@ -214,6 +214,7 @@
                             </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemGray4Color"/>
                         <constraints>
                             <constraint firstItem="U56-2x-Y5s" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="15" id="8qB-1R-6Nq"/>
                             <constraint firstItem="U56-2x-Y5s" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="jmx-ee-hWb"/>
@@ -256,6 +257,9 @@
         <image name="plus.circle" catalog="system" width="128" height="121"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGray4Color">
+            <color red="0.81960784313725488" green="0.81960784313725488" blue="0.83921568627450982" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
