@@ -36,38 +36,40 @@ class ViewController: UIViewController {
     
     
     func doAnimation(){
-        UIView.animate(withDuration: 1, delay: 0) { [weak self] in
-            self?.circle1CenterConstraint.constant = 30
+        
+        
+        UIView.animate(withDuration: 0.4, delay: 0.5, options: .curveEaseIn) { [weak self] in
+            self?.circle1CenterConstraint.constant = 35
             self?.view.layoutIfNeeded()
         }
-        UIView.animate(withDuration: 1, delay: 0.5) { [weak self] in
-            self?.circle2CenterConstraint.constant = 30
+        UIView.animate(withDuration: 0.4, delay: 0.7, options: .curveEaseIn) { [weak self] in
+            self?.circle2CenterConstraint.constant = 35
             self?.view.layoutIfNeeded()
         }
-        UIView.animate(withDuration: 1, delay: 1) { [weak self] in
-            self?.circle3CenterConstraint.constant = 30
+        UIView.animate(withDuration: 0.4, delay: 0.9, options: .curveEaseIn) { [weak self] in
+            self?.circle3CenterConstraint.constant = 35
             self?.view.layoutIfNeeded()
         }
-        UIView.animate(withDuration: 1, delay: 1.5) {[weak self] in
-            self?.circle4CenterConstraint.constant = 30
+        UIView.animate(withDuration: 0.4, delay: 1.1, options: .curveEaseIn) { [weak self] in
+            self?.circle4CenterConstraint.constant = 35
             self?.view.layoutIfNeeded()
         } completion: { (_) in
             self.setImages(with: BankHelper.getNextBankImagesGroup())
-            UIView.animate(withDuration: 1, delay: 0) { [weak self] in
-                self?.circle4CenterConstraint.constant = 0
+            UIView.animate(withDuration: 0.4, delay: 0, options: .curveEaseOut) { [weak self] in
+                self?.circle1CenterConstraint.constant = 0
                 self?.view.layoutIfNeeded()
             }
-            UIView.animate(withDuration: 1, delay: 0.5) { [weak self] in
-                self?.circle3CenterConstraint.constant = 0
-                self?.view.layoutIfNeeded()
-            }
-            UIView.animate(withDuration: 1, delay: 1) { [weak self] in
+            UIView.animate(withDuration: 0.4, delay: 0.2, options: .curveEaseOut) { [weak self] in
                 self?.circle2CenterConstraint.constant = 0
                 self?.view.layoutIfNeeded()
             }
+            UIView.animate(withDuration: 0.4, delay: 0.4, options: .curveEaseOut) { [weak self] in
+                self?.circle3CenterConstraint.constant = 0
+                self?.view.layoutIfNeeded()
+            }
             
-            UIView.animate(withDuration: 1, delay: 1.5) {[weak self] in
-                self?.circle1CenterConstraint.constant = 0
+            UIView.animate(withDuration: 0.4, delay: 0.6, options: .curveEaseOut) { [weak self] in
+                self?.circle4CenterConstraint.constant = 0
                 self?.view.layoutIfNeeded()
             } completion: { [weak self] (_) in
                 self?.doAnimation()
